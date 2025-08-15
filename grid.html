@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        header{
+            display: flex;
+
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        ul li{
+            padding: 10px;
+            position: relative;
+            top: 0px;
+            font-size: 15px;
+             font-family: 'Montserrat', sans-serif;
+             cursor: pointer;
+        }
+        .first{
+            padding-right: 300px;
+            font-size: 20px;
+            padding-left: 193px;
+            font-weight: bold;
+        }
+        .subtitle{
+          font-size: 10px;
+
+        }
+        .imp{
+          width: 637px;
+    height: 466px;
+    /* padding-left: 47px; */
+    margin-left: 377px;
+    margin-top: 50px;
+        }
+        .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* show below the main item */
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    /* z-index: 100; */
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: normal;white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* show menu on hover */
+}
+
+.dropdown-menu li:hover {
+    background-color: #f2f2f2;
+    
+}
+    </style>
+</head>
+<body>
+     <header>
+        <nav>
+          
+           <ul>
+            <li class="first"> 
+              <img src="Screenshot 2025-04-10 233539.png" alt="error" width="30px" height="30px" > UltraEdit
+             <div class="subtitle">Lorem ipsum dolor sit amet.</div>
+            </li>
+            
+           <li class="dropdown">
+        Product ▼
+        <ul class="dropdown-menu">
+            <li>Windows</li>
+            <li>Mac</li>
+            <li>Linux</li>
+        </ul>
+    </li>
+
+    <li class="dropdown">
+        Pricing ▼
+        <ul class="dropdown-menu">
+            <li>Basic</li>
+            <li>Pro</li>
+            <li>Enterprise</li>
+        </ul></li>
+
+    <li class="dropdown">
+        Resources ▼
+        <ul class="dropdown-menu">
+            <li>Docs</li>
+            <li>Tutorials</li>
+            <li>Community</li>
+        </ul>
+    </li>
+
+    <li class="dropdown">
+        About Us ▼
+        <ul class="dropdown-menu">
+            <li>Company</li><li>Careers</li>
+            <li>Contact</li>
+        </ul>
+    </li>
+</ul>
+           </ul> 
+        </nav>
+     </header>
+     <main>
+        <div class="imp">
+<div style="font-size: 45px;">
+  Download <span style="font-weight: bold;">UltraEdit</span> for Windows
+</div>
+
+        </div>
+     </main>
+</body>
+</html>
