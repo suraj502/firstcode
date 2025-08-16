@@ -3,40 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transform properity</title>
+    <title>transition property</title>
     <style>
-        *{
-             margin: 0px;
-    padding: 0px;
-        }
-
-        
-        .container{
-    height: 60vh;
-    width: 80vw;
-    border: 3px solid aqua;
-   
+        .boxes{
+            width: 60vw;
+            height: 40vh;
+            background-color: aqua;
         }
         .box{
-  width: 40vw;
-  height: 30vh;
-  border: 3px solid green;
-  /* transform: rotatez(40deg); */
-  /* transform: skewy(40deg); */
-  /* transform: translateX(-10%) translateY(-10%) skew(40deg); */
-transform: rotate();
-  display: flex;
-  justify-content: center;
-  align-content: center;
-
+            width: 6vw;
+               height: 9vh;
+                        background-color: blue;
+         transition:translate ,3s,ease-in,1s ;
+        }
+        .translate{
+            transform: translateX(20px) translateY(20px);rotate:(90deg);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-  box
+    <div class="boxes">
+        <div class="box translate">
+
         </div>
     </div>
+
 </body>
 </html>
