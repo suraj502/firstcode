@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transition property</title>
+    <title>animation</title>
     <style>
-        .boxes{
-            width: 60vw;
-            height: 40vh;
-            background-color: aqua;
+        .boxes {
+      width: 60vw;
+      height: 40vh;
+      background-color: aqua;
+      
+    }
+
+    .box {
+      width: 6vw;
+      height: 9vh;
+      background-color: blue;
+     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      animation: suraj 3s ease-in 1s 2 ;
+      animation-fill-mode: forwards;
+    }
+    @keyframes suraj {
+        from{
+
         }
-        .box{
-            width: 6vw;
-               height: 9vh;
-                        background-color: blue;
-         transition:translate ,3s,ease-in,1s ;
+        to{
+background-color: red;
+
+transform: scale(2) translateX(50px) translateY(60px);
         }
-        .translate{
-            transform: translateX(20px) translateY(20px);rotate:(90deg);
-        }
+        
+    }
     </style>
 </head>
 <body>
     <div class="boxes">
-        <div class="box translate">
-
+        <div class="box">
+            box
         </div>
     </div>
-
 </body>
 </html>
